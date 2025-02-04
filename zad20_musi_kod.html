@@ -1,7 +1,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        function okno_zamknij_smula() {
+        function okno_zamknij_musijowski() {
             window.close()
         }
         29
@@ -9,13 +9,13 @@
 </head>
 <body>
 <form>
-<textarea name="Smuła" cols="120" rows="30" readonly>
+<textarea name="musijowski" cols="120" rows="30" readonly>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Zadanie 20</title>
     <script language="JavaScript">
-        function AB_smu() {
+        function AB_mus() {
             const xa = parseFloat(document.getElementById("xa").value);
             const ya = parseFloat(document.getElementById("ya").value);
             const xb = parseFloat(document.getElementById("xb").value);
@@ -27,7 +27,7 @@
             document.getElementById("nazwa").innerHTML = `Długość boku AB = {AB.toFixed(2)}`;
         }
 
-        function BC_smu() {
+        function BC_mus() {
             const xb = parseFloat(document.getElementById("xb").value);
             const yb = parseFloat(document.getElementById("yb").value);
             const xc = parseFloat(document.getElementById("xc").value);
@@ -38,7 +38,7 @@
             document.getElementById("nazwa").innerHTML = `Długość boku BC = {BC.toFixed(2)}`;
         }
 
-        function AC_smu() {
+        function AC_mus() {
             const xa = parseFloat(document.getElementById("xa").value);
             const ya = parseFloat(document.getElementById("ya").value);
             const xc = parseFloat(document.getElementById("xc").value);
@@ -65,16 +65,16 @@
     Podaj xc = <input type="text" id="xc"><br>
     Podaj yc = <input type="text" id="yc"><br><br>
 
-    <input type="button" value="Oblicz |AB|" onclick="AB_smu()"><br>
-    <input type="button" value="Oblicz |BC|" onclick="BC_smu()"><br>
-    <input type="button" value="Oblicz |AC|" onclick="AC_smu()"><br><br>
+    <input type="button" value="Oblicz |AB|" onclick="AB_mus()"><br>
+    <input type="button" value="Oblicz |BC|" onclick="BC_mus()"><br>
+    <input type="button" value="Oblicz |AC|" onclick="AC_mus()"><br><br>
     
     <div style="font-size:50pxt;"id="nazwa"></div>
 </body>
 </html>
 </textarea>
     </form>
-    <input type="button" value="zamknij okno" onclick="okno_zamknij_smula()" />
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_musijowski()" />
     <script type="text/javascript">
     </script>
 </body>
