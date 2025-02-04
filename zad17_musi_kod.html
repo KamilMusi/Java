@@ -20,20 +20,20 @@
  <script language="JavaScript">
 
 document.write("1. Wymień cztery sposoby wyprowadzania danych w JS"+"<br>");
-document.write("<b><u>"+"z użyciem dokument.write(), z użyciem okienka alert(), do okienek formularza i do tabeli"+"</b></u><br>");
+document.write("<b><u>"+"console.log() – wypisuje w konsoli., alert() – wyświetla okno alertu., document.write() – wpisuje do dokumentu HTML., innerHTML – modyfikuje zawartość elementu HTML."+"</b></u><br>");
 document.write("2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?"+"<br>");
-document.write("<b><u><lu><li>"+"Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy"+"</li>"+
-               "<li>"+"Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod"+"</li>"+
-               "<li>"+"Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b)"+"</li>"+
-               "<li>"+"Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return"+"</b></u></li></lu>");
+document.write("<b><u><lu><li>"+"Definicja – Funkcja w JavaScript to blok kodu wykonujący określone zadanie, który można wielokrotnie wywoływać."+"</li>"+
+               "<li>"+"Składnia – Definiuje się ją za pomocą słowa kluczowego function"+"</li>"+
+               "<li>"+"Parametry i zwracanie wartości – Funkcja może przyjmować argumenty i zwracać wartość:"+"</li>"+
+               "<li>"+"Rodzaje funkcji – W JS istnieją funkcje zwykłe, strzałkowe (=>), anonimowe oraz wyrażenia funkcyjne."+"</b></u></li></lu>");
 document.write("3. Omów metody getElementsByName, getElementById, getElementByTagName"+"<br>");
-document.write("<b><u>"+"getElementById"+"("+"id"+")"+" - dostęp do wszystkich elementów o konkretnej wartości atrybutu id "+"<br>"+
-				"getElementByTagName"+"("+"znacznik"+")"+" - dostęp do wszystkich elementów o typie znacznika, np. P lub DIV"+"<br>"+
-				"getElementByName"+"("+"nazwa"+")"+" - dostęp do wszystkich elementów o konkretnej wartości atrybutu"+"</b></u><br>");
+document.write("<b><u>"+"getElementById"+"("+"id"+")"+" - Zwraca jeden element o unikalnym id, Najszybsza metoda pobierania elementu. "+"<br>"+
+				"getElementByName"+"("+"znacznik"+")"+" - Zwraca kolekcję (NodeList) elementów o podanej wartości atrybutu name."+"<br>"+
+				"getElementByTagName"+"("+"nazwa"+")"+" - Zwraca kolekcję (HTMLCollection) elementów o podanej nazwie znacznika (div, p, span"+"</b></u><br>");
 document.write("4. Omów właściwości innerHTML innerText className. (każdą osobno)"+"<br>");
-document.write("<b><u>"+"innerHTML - jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli"+"<br>"+
-				"innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie"+"<br>"+
-				"className – umożliwia określenie klasy CSS użytej do prezentacji elementu"+"</b></u>");
+document.write("<b><u>"+"innerHTML - Pobiera lub ustawia kod HTML wewnątrz elementu, Może wstawiać tagi HTML, co czyni go potężnym, ale podatnym na ataki XSS."+"<br>"+
+				"innerText – Pobiera lub ustawia czysty tekst wewnątrz elementu, Ignoruje tagi HTML i zwraca tylko widoczny tekst."+"<br>"+
+				"className – Pobiera lub ustawia nazwy klas CSS elementu, Może przypisać jedną lub więcej klas jako ciąg znaków."+"</b></u>");
  </script>
 </div>
 </body>
