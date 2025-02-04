@@ -5,23 +5,23 @@
 </head>
 <body>
 <script type="text/javascript">
- function pole_smula()
+ function pole_musijowski()
  {
-var a_smula= parseFloat(document.getElementById('dlugosc').value);
-var b_smula= a_smula*a_smula;
- document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_smula.toFixed(2)+" cm^2"; 
+var a_musijowski= parseFloat(document.getElementById('dlugosc').value);
+var b_musijowski= a_musijowski*a_musijowski;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_musijowski.toFixed(2)+" cm^2"; 
  }
- function obwod_smula()
+ function obwod_musijowski()
  {
-var a_smula= parseFloat(document.getElementById('dlugosc').value);
-var b_smula= 4*a_smula;
- document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_smula.toFixed(2)+" cm"; 
+var a_musijowski= parseFloat(document.getElementById('dlugosc').value);
+var b_musijowski= 4*a_musijowski;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_musijowski.toFixed(2)+" cm"; 
  }
 </script>
  <h1>Wszystko o KWADRACIE</h1><br><br>
  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
- <input type="button" name="pole" value="Oblicz pole" Onclick="pole_smula()"><br><br>
- <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_smula()"><br><br>
+ <input type="button" name="pole" value="Oblicz pole" Onclick="pole_musijowski()"><br><br>
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_musijowski()"><br><br>
  <div style="color:red;font-size:50px;"id="nazwa"></div>
 </body>
 </html>
