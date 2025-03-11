@@ -2,24 +2,24 @@
 <html>
  <head>
  <script type="text/javascript">
- function Owocsmula(owoc_s,kolor_s,rodzaj_s,smak_s)
+ function Owocmusijowski(owoc_s,kolor_s,rodzaj_s,smak_s)
 {
 this.owoc=owoc_s;
 this.kolor=kolor_s;
 this.rodzaj=rodzaj_s;
 this.smak=smak_s;
 }
- Owocsmula.prototype.pokaz_smula = function () 
+ Owocmusijowski.prototype.pokaz_musijowski = function () 
  {
  alert(this.owoc + ' ' + this.kolor+ ' ' + this.rodzaj+ ' ' + this.smak);
  };
-var jablko = new Owocsmula("jablko", "czerwone", "rodzaj: gloster", "lekko kwaskowe i orzeźwiające"); 
-var banan = new Owocsmula("banan", "żółty", "rodzaj: banan żółty", "słodki");
-var gruszka = new Owocsmula("gruszka","zielony","rodzaj: konferencja", "słodki");
+var jablko = new Owocmusijowski("jablko", "czerwone", "rodzaj: gloster", "lekko kwaskowe i orzeźwiające"); 
+var banan = new Owocmusijowski("banan", "żółty", "rodzaj: banan żółty", "słodki");
+var gruszka = new Owocmusijowski("gruszka","zielony","rodzaj: konferencja", "słodki");
   
-jablko.pokaz_smula(); 
-banan.pokaz_smula(); 
-gruszka.pokaz_smula(); 
+jablko.pokaz_musijowski(); 
+banan.pokaz_musijowski(); 
+gruszka.pokaz_musijowski(); 
   
  document.write("dostęp do właściwości"+"<br>");
   
