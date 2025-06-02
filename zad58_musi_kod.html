@@ -1,0 +1,58 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Musijowski() {
+            window.close()
+        }
+        22
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Musijowski" cols="120" rows="30" readonly>
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+<meta charset="utf-8"> 
+<title>  </title> 
+
+<script language="JavaScript"> 
+
+ let l1_mus=prompt("podaj pierwsza liczbe=",""); 
+ let l2_mus=prompt("podaj druga liczbe=",""); 
+ let w_mus;  
+  
+  if(l1_mus>l2_mus)
+  {
+  for(i=l2_mus;i<=l1_mus;i++)
+  {
+  if(i%2==1)
+  document.write("style="color:green;font-size:18px""+i+"<br>");
+  }
+  }
+  else if(l2_mus>l1_mus)
+  {
+  for(i=l1_mus;i<=l2_mus;i++)
+  { if(i%2==1)
+  document.write("style="color:blue;font-size:9px""+i+"<br>");
+ }
+  }
+  else
+  {
+  document.write("liczby sa rdwne"); 
+  }
+
+</script> 
+
+</head>  
+<body>  
+</body>  
+</html>
+  
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Musijowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
