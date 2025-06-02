@@ -1,15 +1,31 @@
 <html>
-  <body>
-    <div style="color:red;font-size:50px;">
-      <script language="JavaScript">
-        silnia_koniec=parseFloat (prompt("koniec petli",""));
+ <head>
+ </head>
+<body>
+<div id="is" style="color:red;font-size:50px;">
+  <script language="javascript">
+	silnia_koniec=parseFloat(prompt("koniec pętli",""));
+	
+	if(silnia_koniec==0)
+	{
+	document.write("silnia=1");
+	}
+	else
+	{
+	let silnia_mus=1;
+	
+	for(i=1;i<=silnia_koniec;i++)
+	{
+	silnia_mus *=i;
 
-        var silnia_mus=1;
-      for(i=1;i<=silnia_koniec;i++){
-        silnia_mus=silnia_mus*i;
-      }
-        doument.write("silnia="+silnia_mus);
-      </script>
-    </div>
-  </body>
+	}
+	
+	document.write("silnia="+silnia_mus);
+	
+	}
+	
+
+  </script> 
+</div>
+</body>
 </html>
