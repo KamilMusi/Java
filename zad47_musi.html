@@ -1,33 +1,31 @@
 <!DOCTYPE html>   
 <head>    
-<title>budowa trojkata </title>    
 <meta charset="utf-8">   
 </head>  
 <body> 
 <div style="color:red;font-size:50px;"> 
 <script language="JavaScript"> 
-  do { 
-var liczba1=prompt("podaj bok a=",""); 
+do{
+do{ 
+var liczba1=prompt("bok a=",""); 
 var a_mus=parseFloat(liczba1); 
-} 
-while ( a_mus<=0); 
-
-  do { 
-var liczba2=prompt("podaj bok b=",""); 
+  } 
+while (isNaN(a_mus) || a_mus <= 0); 
+do { 
+var liczba2=prompt("bok b=",""); 
 var b_mus=parseFloat(liczba2); 
-}
-while(!( b_mus>0)); 
-  
-  do { 
-var liczba3=prompt("podaj bok c=",""); 
+   } 
+while  (isNaN(b_mus) || b_mus <= 0);    
+do { 
+var liczba3=prompt("bok c=",""); 
 var c_mus=parseFloat(liczba3); 
-} 
-while ( c_mus<=0); 
-
-if( (a_mus+b_mus>c_mus) && (a_mus+c_mus>b_mus) && (c_mus+b_mus>a_mus))
-{
-document.write("Te boki tworza trojkat"<br>");  
-}
+  }    
+while (isNaN(c_mus) || c_mus <= 0); 
+  }
+while (!(a_mus + b_mus > c_mus && a_mus + c_mus > b_mus && b_mus + c_mus > a_mus));
+document.write("bok a=" + a_mus + "<br>"); 
+document.write("bok b=" + b_mus + "<br>"); 
+document.write("bok c=" + c_mus + "<br>"); 
 </script> 
 </div> 
 </body> 
