@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Musijowski() {
+            window.close()
+        }
+        22
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Musijowski" cols="120" rows="30" readonly>
+<html>
+ <head>
+ </head>
+<body>
+<div id="is" style="color:red;font-size:50px;">
+  <script language="javascript">
+	silnia_koniec=parseFloat(prompt("koniec pętli",""));
+	
+	if(silnia_koniec==0)
+	{
+	document.write("silnia=1");
+	}
+	else
+	{
+	let silnia_mus=1;
+	
+	for(i=1;i<=silnia_koniec;i++)
+	{
+	silnia_mus *=i;
+
+	}
+	
+	document.write("silnia="+silnia_mus);
+	
+	}
+	
+
+  </script> 
+</div>
+</body>
+</html>
+
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Musijowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
