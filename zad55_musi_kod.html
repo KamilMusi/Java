@@ -1,0 +1,76 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Musijowski() {
+            window.close()
+        }
+        22
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Musijowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="font-size:13px;">
+<script>
+var l1_k_mus, l2_k_mus;
+do
+  {
+l1_k_mus = prompt("1 liczba z przedialu <20:60>", "");
+  }
+while (l1_k_mus < 20 || l1_k_mus > 60 || isNaN(l1_k_mus));
+do
+  {
+l2_k_mus = prompt("2 liczba z przedzialu <20:60>", "");
+  }
+while (l2_k_mus < 20 || l2_k_mus > 60 || isNaN(l2_k_mus));
+var pocz_mus;
+do
+  {
+pocz_mus = prompt("Wartosc poczatkowa wielkosci tekstu: ", "");
+  }
+while (isNaN(pocz_mus) || pocz_mus <= 0);
+var tekst_mus;
+do
+  {
+tekst_mus = prompt("Dowolny tekst: ", "");
+  }
+while (!tekst_mus || tekst_mus.trim() === "");
+l1_k_mus = Number(l1_k_mus);
+l2_k_mus = Number(l2_k_mus);
+pocz_mus = Number(pocz_mus);
+if (l1_k_mus < l2_k_mus)
+  {
+for (let i = pocz_mus; i <= 100; i += 5)
+  {
+document.write("<p style='font-size:" + i + "px'>" + tekst_mus + "</p>");
+  }
+  }
+else if (l2_k_mus < l1_k_mus)
+  {
+for (let i = pocz_mus; i >= 5; i -= 5)
+  {
+document.write("<p style='font-size:" + i + "px'>" + tekst_mus + "</p>");
+  }
+  }
+else 
+  {
+document.write("<p style='font-size:" + pocz_mus + "px'>" + tekst_mus + "</p>");
+  }
+</script>
+</div>
+</body>
+</html>
+
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Musijowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
