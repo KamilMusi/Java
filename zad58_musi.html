@@ -3,18 +3,20 @@
 <meta charset="utf-8">
 <script language="JavaScript">
 function okno_zamknij()
-{window.close()}
+ {
+window.close()
+ }
 </script>
 </head>
 <body>
 <script language="JavaScript">
-var l1=prompt("podaj liczbe1:","");
+var l1=prompt("podaj pierwsza liczbe:","");
 var liczba1=parseFloat(l1);
-var l2=prompt("podaj liczbe2: ","");
+var l2=prompt("podaj druga liczbne:","");
 var liczba2=parseFloat(l2);
 if(liczba1 == liczba2)
  {
-confirm("Takie same liczby")
+confirm("takie same liczby")
  }
 if(liczba1 < liczba2)
  {
