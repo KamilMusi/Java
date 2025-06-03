@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Musijowski() {
+            window.close()
+        }
+        22
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Musijowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script language="JavaScript">
+function okno_zamknij()
+  {
+window.close()
+  }
+</script>
+</head>
+<body>
+<script language="JavaScript">
+do
+  {
+var r=prompt("promien kola w ktory mbedzie obliczanna ilosc punktow:","");
+var r_mus=parseFloat(r);
+  }
+while (isNaN(r_mus) || r_mus < 0)
+var n=0;
+let granica = Math.ceil(r_mus);
+for (let i_mus = -granica; i_mus <= granica; i_mus=i_mus+1)
+  {
+for (let j_mus = -granica; j_mus <= granica; j_mus=j_mus+1)
+  {
+if ((i_mus**2 + j_mus**2 <= r_mus**2))
+n++;
+  }
+  }
+document.write("ilosc punktow: "+ n)
+</script>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</body>
+</html>
+  
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Musijowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
