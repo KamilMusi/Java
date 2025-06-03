@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Musijowski() {
+            window.close()
+        }
+        22
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Musijowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+<head>
+<title>Sprawdzenie danych Musijowski </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="font-size:13px;">
+<script language="JavaScript">
+var imie=prompt("Imie: ","");
+var nazw=prompt("Nazwiskko: ","");
+var a_mus=(imie.length % 2)+5;
+var b_mus=(nazw.length % 5)+20;
+for(var i=0; i<b_mus;i++)
+ {
+document.write("*");
+ }
+for(var i=0; i<a_mus-2;i++)
+ {
+document.write("<br>*");
+for(var j=0; j<b_mus-2;j++)
+ {
+document.write("&nbsp&nbsp");
+ }
+document.write("*");
+ }
+document.write("<br>");
+for(var i=0; i<b_mus;i++)
+ {
+document.write("*");
+ }
+</script>
+</div>
+</body>
+</html>
+  
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Musijowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
