@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <head>
-<title>Sprawdzenie danych Musijowski </title>
+<title>Sprawdzenie danych Musijowski</title>
 <meta charset="utf-8">
 </head>
 <body>
-<div style="color:red;font-size:50px;">
+<div style="color:red;font-size:40px;">
 <script language="JavaScript">
-do {
+do
+  {
 var liczba1=prompt("wysokosc=","");
 var h_mus=parseFloat(liczba1);
-}
+  }
 while ( h_mus<=0 || isNaN(h_mus));
-do {
-var liczba1=prompt("podstawe=","");
+do 
+  {
+var liczba1=prompt("podstawa=","");
 var a_mus=parseFloat(liczba1);
-}
-while(!( a_mus>0));
+  }
+while(!(a_mus>0));
 var Pole=a_mus*h_mus/2;
 document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
 </script>
