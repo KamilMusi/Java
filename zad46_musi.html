@@ -1,24 +1,24 @@
-<!DOCTYPE html>   
-<head>    
-<title>Sprawdzenie danych Musijowski </title>    
-<meta charset="utf-8">  
-</head>  
-<body> 
-<div style="color:red;font-size:50px;"> 
-<script language="JavaScript"> 
-do { 
-var liczba1=prompt("wysokosc=",""); 
-var h_mus=parseFloat(liczba1); 
-} 
-while ( h_mus<=0 || isNaN(h_mus)); 
-do { 
-var liczba1=prompt("podstawe=",""); 
-var a_mus=parseFloat(liczba1);  
-} 
-while(!( a_mus>0));     
-var Pole=a_mus*h_mus/2; 
-document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>"); 
-</script> 
-</div> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<head>
+<title>Sprawdzenie danych Musijowski </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+do {
+var liczba1=prompt("wysokosc=","");
+var h_mus=parseFloat(liczba1);
+}
+while ( h_mus<=0 || isNaN(h_mus));
+do {
+var liczba1=prompt("podstawe=","");
+var a_mus=parseFloat(liczba1);
+}
+while(!( a_mus>0));
+var Pole=a_mus*h_mus/2;
+document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
+</script>
+</div>
+</body>
+</html>
